@@ -1,0 +1,224 @@
+section.card {
+  width: 100vw;
+  height: 100vh;
+}
+
+.card.scroll {
+  position: relative;
+}
+
+.project {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  width: 85%;
+  height: 75%;
+  display: flex;
+}
+
+.project-copy {
+  position: relative;
+  flex: 1.75;
+  border-radius: 12px;
+  padding: 2em;
+  background: var(--color-bg-secondary);
+}
+
+.project-img {
+  flex: 3;
+  border-radius: 12px;
+  overflow: hidden;
+  height: 100%;
+}
+
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.project-header h3 {
+  color: var(--color-text);
+  text-transform: uppercase;
+  font-family: var(--font-secondary);
+  font-size: 26px;
+  line-height: 100%;
+}
+
+.project-header p {
+  padding: 0 !important;
+}
+
+.project-copy p {
+  padding: 1em 0;
+}
+
+.project-cta {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.project-cta-row {
+  width: 100%;
+  display: flex;
+  gap: 1em;
+}
+
+.project-img img {
+    object-fit: cover;
+    object-position: center;
+    filter: grayscale(1);
+}
+
+.project-img img#century {
+    object-fit: fill;
+}
+
+.project-content {
+
+}
+
+.project-list {
+    padding: 0;
+    margin: 50px 0;
+    list-style-type: none;
+}
+
+.project-list li {
+    background: #181818;
+    margin: 2px auto;
+    padding: 25px;
+    cursor: pointer;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+    transition: 0.2s;
+}
+
+.project-list li:hover {
+    margin: 20px auto;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    transform: scale(1.05);
+}
+
+.project-list li a {
+    font-size: 1.5rem;
+}
+
+/*------------------------
+    ACCORDING STYLING
+-------------------------*/
+.accordion:hover .accordion-item:hover .accordion-item-content,
+.accordion .accordion-item--default .accordion-item-content {
+    height: 8rem;
+}
+
+.accordion-item-content,
+.accordion:hover .accordion-item-content {
+    height: 0;
+    overflow: hidden;
+    transition: height 0.5s;
+}
+
+.accordion {
+    padding: 0;
+    margin: 0 auto;
+    
+}
+
+    .accordion .accordion-item {
+        background-color: #181818;
+        border-bottom: 1px solid #666;
+        margin: 2px auto;
+        padding: 10px;
+        cursor: pointer;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        transition: 0.2s;
+        color: #eee;
+        border-radius: 10px;
+    }
+
+        .accordion .accordion-item:hover {
+            margin: 20px auto;
+            box-shadow: 0 4px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            transform: scale(1.05);
+        }
+
+    .accordion h1 {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .accordion p {
+        font-size: .9rem;
+        
+    }
+
+
+    .accordion .accordion-item:nth-child(1) {
+       
+    }
+
+    .accordion .accordion-item:nth-child(2) {
+      
+    }
+
+    .accordion .accordion-item:nth-child(3) {
+        
+    }
+
+    .accordion .accordion-item:nth-child(4) {
+       
+    }
+
+/* CSS for hover effects */
+
+.accordion-img img {
+    object-fit: contain;
+    /*height: fit-content;*/
+}
+.accordion-item {
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+    .accordion-item:hover {
+        background-color: rgba(0, 0, 0, 0.05); /* Subtle background change on hover */
+    }
+
+.project-img img {
+    width: 100%;
+    /*height: auto;*/
+    transition: opacity 0.5s ease;
+}
+
+/* Add this class for image transitions */
+.image-fade {
+    opacity: 0;
+}
+
+.cta {
+  flex: 1;
+  padding: 0.5em 1em;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.125);
+}
+
+.cta span {
+  text-transform: uppercase;
+}
+
+@media (max-width: 900px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project-header h3 {
+    font-size: 24px;
+  }
+}

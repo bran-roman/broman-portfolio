@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Brandon Roman | Portfolio Redesign | Sept 2024
+    </title>
+
+    <!-- GLOBAL STYLE -->
+    <link rel="stylesheet" href="./css/global.css" />
+    <link rel="stylesheet" href="./css/loader.css" />
+
+    <!-- MENU STYLE-->
+    <link rel="stylesheet" href="./css/nav.css" />
+    <link rel="stylesheet" href="./css/menu.css" />
+
+    <!-- SECTION STYLE -->
+    <link rel="stylesheet" href="./css/hero.css" />
+    <link rel="stylesheet" href="./css/about.css" />
+    <link rel="stylesheet" href="./css/services.css" />
+    <link rel="stylesheet" href="./css/promo.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+    <link rel="stylesheet" href="./css/prices-hero.css" />
+    <link rel="stylesheet" href="./css/prices.css" />
+    <link rel="stylesheet" href="./css/features.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
+
+
+  </head>
+  <body>
+      <!-- LOADER -->
+      <div class="loader">
+          <div class="loader-copy">
+              <p id="loader-copy-1">Getting things ready</p>
+
+              <p id="loader-copy-2">Give it a few seconds</p>
+
+              <p id="loader-copy-3">Almost there</p>
+          </div>
+          <div class="progress-bar"></div>
+      </div>
+
+      <!-- NAV -->
+      <nav>
+          <div class="logo">
+              <a href="#hero"><img src="./assets/my-logo2.jpg" alt="" /></a>
+          </div>
+
+          <div class="clock">
+              <p>
+                  ON
+                  <span id="currentTime"></span>
+              </p>
+          </div>
+
+          <div class="ctas">
+              <div class="contact">
+                  <div class="contact-icon">
+                      <ion-icon name="ellipse-sharp"></ion-icon>
+                  </div>
+
+                  <a href="#contact">Let's talk</a>
+              </div>
+
+              <div class="menu">
+                  <div class="menu-icon">
+                      <ion-icon name="close-sharp"></ion-icon>
+                  </div>
+                  <p>Menu</p>
+              </div>
+          </div>
+      </nav>
+
+      <!-- MENU -->
+      <div class="menu-container">
+          <div class="whitespace"></div>
+          <div class="whitespace"></div>
+          <div class="menu-items">
+              <a href="#about" class="menu-item">
+                  <span>01</span>
+                  <span>Who I am</span>
+              </a>
+              <a href="#services" class="menu-item">
+                  <span>02</span>
+                  <span>Technologies</span>
+              </a>
+              <a href="#projects" class="menu-item">
+                  <span>03</span>
+                  <span>Projects</span>
+              </a>
+              <a href="#contact" class="menu-item">
+                  <span>04</span>
+                  <span>Contact</span>
+              </a>
+          </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="container">
+          <!-- HERO SECTION -->
+          <section class="hero" id="hero">
+              <div class="hero-img">
+                  <!--<img src="./assets/wave.png" alt="" />-->
+                  <video autoplay loop muted>
+                      <source src="./assets/sky.mp4" type="video/mp4" />
+                  </video>
+              </div>
+
+              <div class="hero-header">
+                  <div class="hero-col">
+                      <h1>
+                          Broman
+                      </h1>
+                  </div>
+                  <div class="hero-col">
+                      <p id="site-intro">
+                          Dedicated full stack developer commited to shaping cultural values
+                          into brand value.
+                      </p>
+                  </div>
+              </div>
+          </section>
+
+          <!-- ABOUT -->
+          <section class="about" id="about">
+              <div class="about-header">
+                  <div class="about-col">
+                      <p class="callout">Who is Brandon Roman</p>
+                  </div>
+                  <div class="about-col">
+                      <h2>
+                          29 year old Full Stack Software Developer eager to take on new ventures
+                          and projects in the world of coding.
+                          <span style="opacity: 0">.</span>
+                      </h2>
+
+                      <p class="about-copy">
+                          Based in Las Vegas Nevada. Born and raised in the PDX and Bay Area,
+                          I've been fortunate to take part in
+                          different creative workspaces that have shaped me into who I am today.
+                      </p>
+                  </div>
+              </div>
+          </section>
+
+          <!-- SERVICES -->
+          <section class="services" id="services">
+              <div class="services-col">
+                  <p class="callout">Experienced with</p>
+              </div>
+              <div class="services-col">
+                  <div class="services-row">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-python"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>Python</p>
+                          </div>
+                      </div>
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-javascript"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>Javascript</p>
+                          </div>
+                      </div>
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-angular"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>Angular</p>
+                          </div>
+                      </div>
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-wordpress"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>Wordpress</p>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="services-row">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-laravel"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>Laravel</p>
+                          </div>
+                      </div>
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-css3"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>CSS3</p>
+                          </div>
+                      </div>
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="logo-html5"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>HTML</p>
+                          </div>
+                      </div>
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <ion-icon name="cloud"></ion-icon>
+                          </div>
+                          <div class="service-title">
+                              <p>Cloud</p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </section>
+
+          <!-- PROMO  -->
+          <section class="promo" id="projects">
+              <div class="promo-bg">
+                  <img src="./assets/wave.png" alt="" />
+              </div>
+              <div class="promo-header">
+                  <h2>Take a look</h2>
+                  <h2>at the latest</h2>
+                  <h1>Projects</h1>
+              </div>
+          </section>
+
+          <!-- PROJECTS -->
+          <section class="sticky-cards">
+              <section class="projecr-hero pinned"></section>
+
+              <section class="card pinned">
+                  <div class="project">
+                      <div class="project-copy">
+                          <div class="project-header">
+                              <h3>Web Development Projects</h3>
+                              <p>01 - 01</p>
+                          </div>
+                          <div class="project-content">
+                              <p>
+                                  Web applications developed for various small businesses using Wordpress with PHP/Laravel.
+                              </p>
+
+                              <div class="accordion">
+                                  <div class="accordion-item" data-image="/assets/321.png">
+                                      <a href="https://321published.com/" class="accordion-link">
+                                          <h1>321 Published</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for national publications organization "321 Published."
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/silver.png">
+                                      <a href="https://www.silverliningads.com/" class="accordion-link">
+                                          <h1>Silver Lining Ads</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for advertisement agency based in Las Vegas.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/primack.png">
+                                      <a href="https://www.primack.com/" class="accordion-link">
+                                          <h1>Primack Property Management</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for property management service company.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/anbrentals.png">
+                                      <a href="https://www.anbpartyrentals.com/" class="accordion-link">
+                                          <h1>ANB Party Rentals</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for party rental company.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/proshield.png">
+                                      <a href="https://proshieldfireprotection.com/" class="accordion-link">
+                                          <h1>Proshield Fire Protection</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for fire protection and safety company.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/zoia.png">
+                                      <a href="https://zoiasciences.com/" class="accordion-link">
+                                          <h1>Zoia Sciences</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for genetic and blood testing services company.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/heavensauto.png">
+                                      <a href="https://heavensautotech.com/" class="accordion-link">
+                                          <h1>Heavens Auto Tech</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Wordpress Web App developed for auto tech company.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item" data-image="/assets/century-cuts.png">
+                                      <a href="#" class="accordion-link">
+                                          <h1>Century Cuts Barbershop</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Web App developed for Century Cuts Barbershop.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+
+                          </div>
+
+
+                          <div class="project-cta">
+                              <!--<p>View All Projects</p>-->
+                              <div class="project-cta-row">
+                                  <div class="cta"><span>View All</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-img accordion-img">
+                          <img src="/assets/wp.png" alt="Project Image" />
+
+                      </div>
+                  </div>
+              </section>
+
+              <section class="card pinned">
+                  <div class="project">
+                      <div class="project-copy">
+                          <div class="project-header">
+                              <h3>Python / Database Projects</h3>
+                              <p>01 - 02</p>
+                          </div>
+                          <div class="project-content">
+                              <p>
+                                  Contains Python and Database related works.
+                              </p>
+
+                              <div class="accordion">
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/Python-and-Database-Projects/tree/main" class="accordion-link">
+                                          <h1>Vegas Web App</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  This "VegasApp" application is a blog website where
+                                                  users can view and share recommendations for the
+                                                  city of Las Vegas. These activities are broken into three
+                                                  sections, "Dining," "Attractions," and "Travel."
+                                              </p>
+                                          </div>
+                                      </a>
+
+                                  </div>
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/Python-and-Database-Projects/tree/main" class="accordion-link">
+                                          <h1>"Bluebird" Django Checkbook</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  This folder contains a sample Python application named
+                                                  "Blue Bird Banking" which acts as an example of a checkbook
+                                                  bank system program. Users can create accounts by inputting
+                                                  their information along with their any initial deposits they'd
+                                                  like to submit. Once created, they may use the
+                                                  dropdown menu to search for their account and view their recent
+                                                  transaction, as well as their current balance.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/Python-and-Database-Projects/tree/main" class="accordion-link">
+                                          <h1>File Transfer GUI</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Using the "file_transfer.py" Python file, this program allows
+                                                  the user to transfer all .txt files from one chosen directory
+                                                  to another. All files that are moved will be saved in a database.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                          <div class="project-cta">
+                              <!--<p>View All Projects</p>-->
+                              <div class="project-cta-row">
+                                  <div class="cta"><span>View All</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-img">
+                          <img src="./assets/python_sql.png" alt="" />
+                      </div>
+                  </div>
+              </section>
+
+              <section class="card pinned">
+                  <div class="project">
+                      <div class="project-copy">
+                          <div class="project-header">
+                              <h3>C# Projects</h3>
+                              <p>01 - 03</p>
+                          </div>
+
+                          <div class="project-content">
+                              <p>
+                                  Contains C# work as part of Prosper IT Consulting Internship.
+                              </p>
+
+                              <div class="accordion">
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/C-Sharp-Projects.git" class="accordion-link">
+                                          <h1>Car Insurance Web App</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  This is an MVC Web application which acts as a car insurance website.
+                                                  A user input is taken and a quote is calculated based on business logic.
+                                                  An Admin controller is also included which allows any administrators to view
+                                                  all quotes that have been submitted.
+                                              </p>
+                                          </div>
+                                      </a>
+
+                                  </div>
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/C-Sharp-Projects.git" class="accordion-link">
+                                          <h1>Newsletter Web App</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  This is an MVC web application which utilizes web forms and Entity
+                                                  Framework to sign up users to a newsletter. After clicking the submit
+                                                  button, the data is transferred to a newly created Newsletter
+                                                  Database, which then returns the user to a SignUp page message of
+                                                  "Success." A user can choose to navigate to the "admin" controller
+                                                  to view those user inputs, and may also unsubscribe to the newsletter
+                                                  through that controller.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/C-Sharp-Projects.git" class="accordion-link">
+                                          <h1>Challenge Web App</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  This is an MVC Web application which includes custom headers and
+                                                  a Date Time function returning the current day and time.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+
+
+                          <div class="project-cta">
+                              <p><!--View all work--></p>
+                              <div class="project-cta-row">
+                                  <div class="cta"><span>View all work</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-img">
+                          <img src="./assets/csharp.jpg" alt="c-sharp" />
+                      </div>
+                  </div>
+              </section>
+
+              <section class="card pinned">
+                  <div class="project">
+                      <div class="project-copy">
+                          <div class="project-header">
+                              <h3>Javascript Projects</h3>
+                              <p>01 - 04</p>
+                          </div>
+                          <div class="project-content">
+                              <p>
+                                  Contains JavaScript work.
+                              </p>
+
+                              <div class="accordion">
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/JavaScript-Projects" class="accordion-link">
+                                          <h1>Pizza Menu</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  This project is a menu used to order pizza with a various selection of toppings.
+                                                  It then takes the input information and calculates a price for the order.
+                                              </p>
+                                          </div>
+                                      </a>
+
+                                  </div>
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/JavaScript-Projects" class="accordion-link">
+                                          <h1>Tic-Tac-Toe Game</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  Classic game of Tic-Tac-Toe. It randomly rolls dice to select which of the
+                                                  two players goes first and then users are off playing the classic game.
+                                                  Users can decide which token each player wants to use and the winner is
+                                                  celebrated with music and flashing lights.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                                  <div class="accordion-item">
+                                      <a href="https://github.com/bran-roman/JavaScript-Projects" class="accordion-link">
+                                          <h1>Calculator</h1>
+                                          <div class="accordion-item-content">
+                                              <p>
+                                                  A basic 4 function calculator. Users can add, subtract, multiply,
+                                                  and divide on a sleek web version of a calculator.
+                                              </p>
+                                          </div>
+                                      </a>
+                                  </div>
+                              </div>
+                          </div>
+
+                          <div class="project-cta">
+                              <!--<p>View all work</p>-->
+                              <div class="project-cta-row">
+                                  <div class="cta"><span>View all work</span></div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-img">
+                          <img src="./assets/javascript2.jpg" alt="" />
+                      </div>
+                  </div>
+              </section>
+
+              <section class="card pinned">
+                  <div class="project">
+                      <div class="project-copy">
+                          <div class="project-header">
+                              <h3>Personal Portfolio V1</h3>
+                              <p>01 - 05</p>
+                          </div>
+                          <p>
+                              First version of personal portfolio project for
+                              Brandon Roman.
+                          </p>
+
+                          <div class="project-cta">
+                              <!--<p>Download App</p>-->
+                              <div class="project-cta-row">
+                                  <div class="cta">
+                                      <span>
+                                          <a href="https://bran-roman.github.io/" class="" />
+                                          View Portfolio
+                                      </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-img">
+                          <img src="./assets/me.jpg" alt="" />
+                      </div>
+                  </div>
+              </section>
+
+              <section class="card scroll">
+                  <div class="project">
+                      <div class="project-copy">
+                          <div class="project-header">
+                              <h3>Github Library</h3>
+                              <p>01 - 06</p>
+                          </div>
+                          <p>
+                              View all projects via Github.
+                          </p>
+
+                          <div class="project-cta">
+                              <!--<p>Download App</p>-->
+                              <div class="project-cta-row">
+                                  <div class="cta">
+                                      <span>
+                                          <a href="https://github.com/bran-roman" class="">
+                                              View Github
+                                          </a>
+                                      </span>
+                                  </div>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="project-img">
+                          <img src="./assets/github2.jpg" alt="" />
+                      </div>
+                  </div>
+              </section>
+
+              <section class="footer"></section>
+          </section>
+
+          <!-- FOOTER  -->
+          <footer id="contact">
+              <div class="footer-bg">
+                  <img src="./assets/wave.png" alt="" />
+              </div>
+              <div class="footer-header">
+                  <h1>Let's</h1>
+                  <h1>Talk</h1>
+              </div>
+              <div class="footer-sub-header">
+                  <h2>Fill the form</h2>
+                  <h2>and</h2>
+                  <h2>Get in touch</h2>
+              </div>
+
+              <div class="footer-ctas">
+                  <div class="footer-ctas-col">
+                      <div class="footer-cta-icon">
+                          <a href="https://www.instagram.com/isoxbro_/" target="_blank">
+                              <ion-icon name="logo-instagram"></ion-icon>
+                          </a>
+                      </div>
+                      <div class="footer-cta-icon">
+                          <a href="https://www.youtube.com/@iamtrueflipsun" target="_blank">
+                              <ion-icon name="logo-youtube"></ion-icon>
+                          </a>
+                      </div>
+                  </div>
+                  <div class="footer-ctas-col">
+                      <div class="footer-cta-icon">
+                          <a href="#hero"><ion-icon name="arrow-up-sharp"></ion-icon></a>
+                      </div>
+                  </div>
+              </div>
+              <div class="footer-form">
+                  <div class="form-col">
+                      <div class="form-row">
+                          <input type="text" placeholder="Your Name" />
+                          <input type="text" placeholder="Your Company" />
+                      </div>
+                      <div class="form-row">
+                          <input type="text" placeholder="Email" />
+                      </div>
+                      <div class="form-row">
+                          <input type="text" placeholder="Estimate Budget" />
+                      </div>
+                      <div class="form-row">
+                          <textarea name="" rows="4" placeholder="Message" id=""></textarea>
+                      </div>
+                  </div>
+
+                  <div class="form-col">
+                      <div class="submit-btn">
+                          <h3>Send</h3>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="footer-copyright">
+                  <p>Broman</p>
+                  <p>Est. 2023</p>
+              </div>
+          </footer>
+      </div>
+
+      <script src="https://unpkg.com/lenis@1.1.4/dist/lenis.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+      <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/split-type@0.3.4/umd/index.min.js"></script>
+
+      <script src="./js/loader.js"></script>
+      <script src="./js/lenis.js"></script>
+      <script src="./js/menu.js"></script>
+      <script src="./js/about.js"></script>
+      <script src="./js/projects.js"></script>
+      <script src="./js/wp-hover.js"></script>
+
+      <!-- ICONS SCRIPT -->
+      <script type="module"
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+      <script nomodule
+              src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+      <!-- SPLINE SCRIPT  -->
+      <script type="module"
+              src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+      <script>
+          document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
+              anchor.addEventListener("click", function (e) {
+                  e.preventDefault();
+
+                  document.querySelector(this.getAttribute("href")).scrollIntoView({
+                      behavior: "smooth",
+                  });
+              });
+          });
+      </script>
+  </body>
+</html>
