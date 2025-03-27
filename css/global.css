@@ -29,6 +29,7 @@ body {
 html.lenis,
 html.lenis body {
   height: auto;
+  overflow: auto;
 }
 
 .lenis.lenis-smooth {
