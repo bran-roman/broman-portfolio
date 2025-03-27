@@ -17,6 +17,11 @@
   box-sizing: border-box;
 }
 
+#content-container {
+    overflow: hidden !important;
+
+}
+
 html,
 body {
   width: 100%;
